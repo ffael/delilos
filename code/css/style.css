@@ -1,0 +1,30 @@
+/*                ======================= */
+
+.glyphicon{
+  display: inline-block;
+  font-size: 72px;
+}
+
+.container{
+  max-width: 1000px;
+}
+
+/* NAVEGATION ======================= */
+
+.main-nav{
+  text-align: center;
+}
+
+.nav{
+  display: inline-block;
+}
+
+.link{
+  color: #7e8b8e;
+}
+
+.link-active{
+  color: #663399;
+  font-weight: bold;
+}
+/*======================================= */
