@@ -1,30 +1,292 @@
 /*                ======================= */
 
+body{
+  background: #e0f7ff url("../img/bg-patterna.jpg") top left repeat;
+  font-family: 'Montserrat', Tahoma, sans-serif;
+  font-size: 16px;
+  height: 100%;
+
+}
+
+h1, h2, h3{
+  font-family: 'Lobster', Tahoma, sans-serif;
+}
+
+.row{
+  padding: 1%;
+  margin: 0;
+}
+
 .glyphicon{
   display: inline-block;
-  font-size: 72px;
+  font-size: 20px;
 }
 
 .container{
   max-width: 1000px;
+  padding: 0;
 }
+/* FONTS ======================= */
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+/*======================================= */
 
 /* NAVEGATION ======================= */
 
 .main-nav{
   text-align: center;
+  font-size: 0.8125em; /* 13px; */
 }
 
 .nav{
   display: inline-block;
+  margin: 10px 0;
 }
 
 .link{
   color: #7e8b8e;
+  margin: 0 2px;
+}
+.link:hover, .nav-pills li a:hover, .nav-pills li a:focus{
+  background: none;
+  color: #663399;
 }
 
 .link-active{
   color: #663399;
   font-weight: bold;
+  margin: 0 2px;
 }
+/*======================================= */
+
+/* LOGO AREA ======================= */
+
+header, .header{
+  background: #9a48d9;
+  height: 120px;
+}
+.logo{
+  float: left;
+  margin: 10px;
+}
+.brand{
+  margin: 0;
+  color: #fff;
+  font-family: 'Lobster', Tahoma, sans-serif;
+  font-size: 50px;
+  padding: 1% 0;
+}
+
+.slogan{
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.fone-button{
+  float: right;
+  margin: 10px;
+  display: inline-block;
+  color: #fff;
+}
+/*======================================= */
+
+/* JUMBOTRON ======================= */
+
+.jumbotron{
+  height: 329px;
+  margin: 0 0 35px 0;
+  border-radius: 10px;
+}
+
+.jumbotron .container{
+  /*background: url("../img/feature-img-1.jpg") no-repeat 0 0 ;*/
+  height: 329px;
+}
+
+/*======================================= */
+
+/* BUTTONS ======================= */
+.button{
+  text-align: center;
+}
+
+.more-button{
+  font-family: 'Lobster', Tahoma, sans-serif;
+  font-size: 1.125em; /* 18px; */
+  text-transform: lowercase;
+  color: #fff;
+  display: inline-block;
+  padding: 1% 5%;
+  background: #9a48d9;
+  border-radius: 5px;
+  border-bottom: solid #7e3bb2 4px;
+}
+    .more-button:hover{
+      text-decoration: none;
+      color: #701bb2;
+      border-bottom: solid #701bb2 4px;
+    }
+
+
+/*======================================= */
+
+/* SERVICES ======================= */
+
+.services-ft{
+  background: #fff;
+  color: #7e8b8e;
+  padding-bottom: 3%;
+  border-radius: 10px;
+}
+
+.title-ft{
+  font-family: 'Lobster', Tahoma, sans-serif;
+  font-size: 2.5em; /* 40px; */
+  float: left;
+  margin: 1% 0 1.5% 1%;
+}
+
+.services-ft .glyphicon-heart-empty{
+  margin: 1% 0;
+  font-size: 2.1875em; /* 35px; */
+  float: left;
+}
+
+/*.services-ft hr{
+  width: 80%;
+  margin: 4% 0 1.5% 1%;
+  float: right;
+  border: solid #cecfcf 1px;
+}*/
+
+.services-list{
+  list-style: none;
+}
+
+.services-list li{
+  margin-bottom: 12%;
+}
+
+.services-list h3{
+  font-size: 1.375em; /* 22px; */
+  display: inline-block;
+  margin: 1% 0;
+}
+
+.services-list .glyphicon-bookmark{
+  text-indent: -1.5em;
+  font-size: 1.1em; /* 17.6px; */
+}
+
+.services-list p{
+  font-size: 0.8125em; /* 13px; */
+  margin: 1% 2% 5% 2%;
+}
+
+/*======================================= */
+
+/* REVIEWS ======================= */
+
+.reviews-ft{
+  color: #248cb2;
+  background:#e0f7ff;
+  padding-bottom: 5%;
+}
+
+.reviews-ft .glyphicon-comment{
+  margin: 1% 0;
+  font-size: 35px;
+  float: left;
+}
+
+/*.reviews-ft hr{
+  width: 80%;
+  margin: 4% 0 1.5% 1%;
+  float: right;
+  border: solid #248cb2 1px;
+}*/
+
+.client-rw-ft{
+  text-align: center;
+  padding: 5%;
+  background: #fff;
+  border-radius: 10px;
+  color: #7e8b8e;
+  font-size: 0.8125em; /* 13px; */
+  margin-top: 35px;
+  border-bottom: solid rgba(137,148,151,0.2) 4px;
+}
+
+.client-rw-ft h3{
+  font-family: 'Montserrat', Tahoma, sans-serif;
+  font-size: 1.25em; /* 20px; */
+  font-weight: bold;
+  color: #248cb2;
+  margin: 5% 0 0 0;
+}
+
+.client-rw-ft span{
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 0 5% 0;
+
+}
+
+.client-rw-ft p{
+  padding: 2%;
+}
+.client-rw-ft p:before, .client-rw-ft p:after{
+  content: ' " ';
+  font-size: 1em;
+  display: inline;
+}
+
+.client-rw-ft img{
+
+
+}
+
+.client-image{
+  display: inline-block;
+  margin: -50px 0 0 0;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.rating{
+  cursor: default;
+}
+
+.rating span{
+  font-size: 1.125em; /* 18px; */
+  margin: 0;
+  color: #9a48d9;
+}
+
+.rating span:nth-child(3n+0){
+  font-size: 1.325em; /* 21.2px; */
+}
+
+.rating span:nth-child(4n+1){
+  font-size: 0.9375em; /* 15px; */
+}
+
+/*======================================= */
+
+/* FOOTER ======================= */
+
+footer{
+  font-size: 0.75em; /* 12px; */
+  color: #f4f4f4;
+  background: #54217c;
+  padding: 2% 0;
+  margin: 0;
+  width: 100%;
+  height: 55px;
+}
+
 /*======================================= */
