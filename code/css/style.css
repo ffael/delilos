@@ -282,3 +282,19 @@ footer, .footer{
 }
 
 /*======================================= */
+
+/* CAROUSEL ======================= */
+.carousel{
+  height: 405px;
+  background: blue;
+  border-bottom: solid 75px #54217c;
+  padding: 0;
+  color: #fff;
+  overflow: hidden;
+}
+
+.carousel img{
+  width:100%;
+}
+
+/*======================================= */

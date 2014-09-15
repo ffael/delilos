@@ -23,7 +23,7 @@
     </ul>
   </nav>
 
-  <div class="header col-sm-12">
+  <div class="header">
     <header class="container">
       <div class="logo">
         <h1 class="brand">Delilos</h1> <span class="slogan">Cleaning Service</span>
@@ -37,11 +37,49 @@
     </header>
   </div>
 
-  <div class="jumbotron col-sm-12">
-      <div class="row">Jumbotron</div>
-  </div>
+  <!-- Carousel Feature -->
+  <div id="myCarousel" class="carousel slide hidden-xs hidden-sm">
+    <div class="">
+    <!-- Carousel Indicators
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+    -->
 
-  <div class="services-ft col-sm-12">
+        <div class="carousel-inner">
+
+            <div class="item active">
+                <img src="img/carousel-1.jpg" alt="Illustratie image of our services">
+            </div>
+
+            <div class="item">
+                <img src="img/carousel-1.jpg" alt="Illustratie image of our services">
+            </div>
+
+            <div class="item">
+                <img src="img/carousel-1.jpg" alt="Illustratie image of our services">
+            </div>
+
+
+        </div>
+    </div>
+
+  <!-- Controlers -->
+
+    <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a>
+
+    <a href="#myCarousel" class="right carousel-control" data-slide="next">
+      <span class="icon-next"></span>
+    </a>
+
+
+  </div> <!-- End of Carousel -->
+
+  <div class="services-ft">
 
     <div class="container">
 
@@ -89,7 +127,7 @@
   </div>
   </div>
 
-  <div class="reviews-ft col-sm-12">
+  <div class="reviews-ft">
     <div class="container">
     <div class="row">
       <span class="glyphicon glyphicon-comment">  </span> <h2 class="title-ft"> Client Reviews </h2>
@@ -161,12 +199,14 @@
   </div>
   </div>
 
-  <div class="footer col-sm-12">
+  <div class="footer">
     <footer class="container">
       <p class="row">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
     </footer>
   </div>
 
-<script type="text/javascript" src="">  </script>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
