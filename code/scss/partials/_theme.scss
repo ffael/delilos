@@ -1,0 +1,182 @@
+
+body{
+	background: $terciary-color;
+}
+
+@media screen and (max-width: map-get($device, medium) ){
+
+	/* Button & Components ======================= */
+	.more-button{
+		padding: 3% 7% !important;
+	}
+
+	/* End ======================= */
+
+}
+
+
+
+
+
+
+
+
+
+/* Navegation ======================= */
+.link{
+	color: $text-color !important;
+	
+	&:hover{
+		color: $active-link-color !important;
+	}
+}
+.link-active{
+	color: $active-link-color;
+	font-weight: bold;
+}
+
+.nav-pills li a:hover, .nav-pills li a:focus{
+	@extend .link:hover;
+}
+
+.main-nav{
+	background: $terciary-color;
+}
+
+/* End ======================= */
+
+/* Header & Logo ======================= */
+
+.header{
+	background: $primary-color;
+
+	.brand{
+		a{
+			color: #fff;
+			text-decoration: none;
+			
+			&:hover{
+				color: $secondary-color;
+			}
+		}
+	}
+
+	.slogan{
+		color: #fff;
+		font-weight: bold;
+		font-transform: uppercase;
+	}
+}
+
+/* End ======================= */
+
+/* Button & Components ======================= */
+
+.navbar-toggle{
+	span:nth-child(2){
+		padding: 30px 10px ;
+		color: #fff;
+	}
+}
+
+.button{
+	text-align: center;
+}
+.more-button{
+	background: $primary-color;
+	border-bottom: solid lighten($secondary-color, 10%) 4px;
+	border-radius: 5px;
+	color: #fff;
+	display: inline-block;
+	text-transform: lowercase;
+	padding: 1% 5%;
+
+	&:hover, &:active{
+		color: $secondary-color;
+		border-bottom: solid $secondary-color 4px;
+		text-decoration: none !important;
+	};
+}
+
+.fone-button, .fone-button:visited{
+	color: #fff;
+	background: $secondary-color;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	text-decoration: none !important;
+
+	&:hover{
+		color: darken($secondary-color, 20%);
+	}
+	&:active{
+		color: $primary-color;
+	};
+}
+
+/* End ======================= */
+
+
+/* Services Section ======================= */
+
+.services-ft{
+	color: $text-color;
+	background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* End ======================= */
+
+
+/* Reviews Section ======================= */
+.reviews-ft{
+	color: $text-color;
+	background: $terciary-color;
+
+	h2, h3{	
+		color: $quaternary-color;
+	}
+
+	.reviews-ft-p{
+		color: $quaternary-color;
+		text-align: center;
+	}
+}
+
+.client-rw-ft{
+	border-bottom: solid rgba(137,148,151,0.2) 4px;
+}
+
+.rating{
+	color: $primary-color;
+}
+
+
+
+
+
+/* End ======================= */
+
+/* Footer Section ======================= */
+
+.footer{
+	color: lighten($secondary-color, 20%);
+	background: $secondary-color;
+}
+
+
+
+/* End ======================= */
+.carousel{
+	background: $terciary-color;
+	border-bottom: solid 75px $secondary-color;
+}

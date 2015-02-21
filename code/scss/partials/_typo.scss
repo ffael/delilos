@@ -1,0 +1,60 @@
+
+body{
+	font-family: $main-font;
+  	font-size: 16px;
+}
+
+h1, h2, h3{
+  font-family: $title-font;
+}
+
+.more-button{
+  font-family: $title-font;
+  font-size: 1.125em; /* 18px; */
+ }
+
+ .title-ft{
+  font-family: $title-font;
+  font-size: 2.5em; /* 40px; */
+}
+
+.glyphicon{
+  display: inline-block;
+  font-size: 1.25em; /* 20px; */
+
+  &.glyphicon-heart, &.glyphicon-comment{
+    margin: 1% 0;
+    float: left;
+  	font-size: 2.1875em; /* 35px; */
+  }
+  &.glyphicon-ok , &.glyphicon-calendar{
+  	font-size: 1.1em; /* 17.6px; */
+  	transition: all 0.3s ease-in;
+  	padding: 1%;
+  	
+  	// &:hover{
+  	// 	background: lightgreen;
+  	// 	color: #fff;
+  	// 	border-radius: 50px;
+  	// 	padding: 2%;
+  	// }
+  }
+   &.glyphicon-th-list{
+   	font-size: 1.5em;
+  }
+}
+
+.main-nav{
+  font-size: 0.8125em; /* 13px; */
+}
+
+.brand{
+  font-size: 3.125em; /* 50px; */
+}
+
+
+.footer{
+	footer{
+		font-size: 0.75em; /* 12px; */
+	}
+}

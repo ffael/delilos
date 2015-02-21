@@ -1,0 +1,48 @@
+/* 
+	Layout Settings -------------
+*/
+
+$device:(
+	small: 480px,
+	medium: 678px,
+	large: 978px
+);
+
+/* ----------------------------- */
+
+
+
+
+
+/* 
+	Theme Settings -------------
+*/
+
+$primary-color: #50D2C0;
+$secondary-color: darken($primary-color, 20%);
+$terciary-color: #F2F1E7;
+$quaternary-color: darken($terciary-color, 55%);
+
+
+$text-color: #87847C;
+$active-link-color: $secondary-color;
+
+/* ----------------------------- */
+
+
+
+
+
+
+/* 
+	Typography -------------
+*/
+
+/* FONTS ======================= */
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+
+$main-font: 'Montserrat', Tahoma, sans-serif;
+$title-font: 'Lobster', Tahoma, sans-serif;
+/*======================================= */

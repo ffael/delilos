@@ -1,1 +1,15 @@
-@import "../css/style.css";
+@import "helpers/variables";
+
+@import "partials/style";
+
+@import "partials/typo";
+@import "partials/theme";
+@import "partials/layout";
+
+/* Pages */
+
+@import "partials/pages/services";
+@import "partials/pages/reviews";
+@import "partials/pages/estimate";
+@import "partials/pages/contact";
+

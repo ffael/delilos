@@ -4,41 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Delilo's Cleaning Service</title>
+  <title>Pritotal - Home and Office Cleaning Services</title>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!--<link rel="stylesheet" href="css/style.css">-->
   <link rel="stylesheet" href="scss/main.css">
 
 </head>
 <body>
 
-  <nav class="main-nav">
-    <ul class="nav nav-pills">
-      <li> <a href="#" class="link-active">Home</a> </li>
-      <li> <a href="#" class="link">Services</a> </li>
-      <li> <a href="#" class="link">Reviews</a> </li>
-      <li> <a href="#" class="link">Cleaning Estimate</a> </li>
-      <li> <a href="#" class="link">Contact</a> </li>
-    </ul>
+  <nav class="main-nav" role="navegation">
+    <div class="collapse navbar-collapse" id="menu-collapse">
+      <ul class="nav nav-pills">
+        <li> <a href="index.html" class="link-active">Home</a> </li>
+        <li> <a href="pages/services.html" class="link">Services</a> </li>
+        <li> <a href="pages/reviews.html" class="link">Reviews</a> </li>
+        <li> <a href="pages/#" class="link">Cleaning Estimate</a> </li>
+        <li> <a href="pages/#" class="link">Contact</a> </li>
+      </ul>
+    </div>
+
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-th-list"></span>
+    </button>
   </nav>
 
-  <div class="header">
-    <header class="container">
-      <div class="logo">
-        <h1 class="brand">Delilos</h1> <span class="slogan">Cleaning Service</span>
+  <header class="header">
+    <div class="container">
+      <div class="col-sm-8">
+        <div class="logo">
+            <h1 class="brand"><a href="index.html">Pri Total</a></h1> <span class="slogan">Cleaning Service</span>
+        </div>
       </div>
 
-      <div class="fone-button">
-        <span class="glyphicon glyphicon-earphone fone-icon">  </span>
-        Give us a Call
-
+      <div class="col-sm-4 fone-banner">
+        <a href="tel:9785965350" class="hidden-sm hidden-xs fone-button">
+          <span class="glyphicon glyphicon-earphone fone-icon">  </span>
+          <span>Give us a Call </span>
+          <span>(978) 596-5350<span>
+        </a>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
 
-  <!-- Carousel Feature -->
+<!-- Carousel Feature -->
   <div id="myCarousel" class="carousel slide hidden-xs hidden-sm">
     <div class="">
     <!-- Carousel Indicators
@@ -78,14 +88,18 @@
     </a>
 
 
-  </div> <!-- End of Carousel -->
+  </div> 
+<!-- End of Carousel -->
 
   <div class="services-ft">
 
     <div class="container">
 
     <div class="row">
-      <span class="glyphicon glyphicon-heart-empty">  </span> <h2 class="title-ft"> We Love What We Do </h2>
+      <div class="col-md-12">
+        <span class="glyphicon glyphicon-heart"></span>
+        <h2 class="title-ft"> We Clean Your House like it was Ours </h2>
+      </div>
     </div>
 
     <div class="row">
@@ -93,13 +107,19 @@
 
         <ul class="services-list">
           <li>
-            <span class="glyphicon glyphicon-bookmark"> </span> <h3>CSS Compatible</h3><br>
-            <p>Sass is completely compatible with all versions of CSS. We take this compatibility seriously, so that you can seamlessly use any available CSS libraries. </p>
+            <span class="glyphicon glyphicon-calendar"></span> <h3>Weekly Cleaning</h3><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud. </p>
           </li>
 
           <li>
-            <span class="glyphicon glyphicon-bookmark">  </span> <h3>CSS Compatible</h3><br>
-            <p>Sass is completely compatible with all versions of CSS. We take this compatibility seriously, so that you can seamlessly use any available CSS libraries. </p>
+            <span class="glyphicon glyphicon-calendar"></span> <h3>Monthly Cleaning</h3><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. </p>
           </li>
         </ul>
 
@@ -108,13 +128,17 @@
       <div class="col-sm-6">
         <ul class="services-list">
           <li>
-            <span class="glyphicon glyphicon-bookmark">  </span> <h3>CSS Compatible</h3><br>
-            <p>Sass is completely compatible with all versions of CSS. We take this compatibility seriously, so that you can seamlessly use any available CSS libraries. </p>
+            <span class="glyphicon glyphicon-ok">  </span> <h3>In our team you can trust!</h3><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
           </li>
 
           <li>
-            <span class="glyphicon glyphicon-bookmark">  </span> <h3>CSS Compatible</h3><br>
-            <p>Sass is completely compatible with all versions of CSS. We take this compatibility seriously, so that you can seamlessly use any available CSS libraries. </p>
+            <span class="glyphicon glyphicon-ok">  </span> <h3>We do your way!</h3><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. </p>
           </li>
         </ul>
       </div>
@@ -123,7 +147,7 @@
     </div>
 
     <div class="row button">
-      <a href="" class="more-button">More</a>
+      <a href="pages/services.html" class="more-button">See all we can do!</a>
     </div>
   </div>
   </div>
@@ -131,17 +155,24 @@
   <div class="reviews-ft">
     <div class="container">
     <div class="row">
-      <span class="glyphicon glyphicon-comment">  </span> <h2 class="title-ft"> Client Reviews </h2>
+      <div class="col-md-12">
+        <span class="glyphicon glyphicon-comment">  </span> 
+        <h2 class="title-ft"> Client Reviews </h2>
+      </div>
+    </div>
+
+    <div class="row">
+        <p class="reviews-ft-p">See what some of our clients have to say about their experience with Pri Total Cleaning Service.</p>
     </div>
 
     <div class="row">
       <div class="col-sm-4">
           <div class="client-rw-ft">
             <div class="client-image">
-              <img src="img/client-rw-pic.jpg" alt="Client's Picture">
+              <img src="img/client-louis.jpg" alt="Client's Picture">
             </div>
 
-            <h3>Maria</h3>
+            <h3>Louis</h3>
             <div class="rating">
               <span>★</span>
               <span>★</span>
@@ -149,18 +180,18 @@
               <span>★</span>
               <span>★</span>
             </div>
-            <span>Monthly Scheduled</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. At nos hinc posthac, sitientis piros Afros. Quid securi etiam tamquam eu fugiat nulla pariatur. Sed haec quis possit intrepidus aestimare tellus.</p>
+            <span>Weekly Scheduled</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. At nos hinc posthac, sitientis piros Afros.</p>
           </div>
       </div>
 
       <div class="col-sm-4">
           <div class="client-rw-ft">
             <div class="client-image">
-                <img src="img/client-rw-pic.jpg" alt="Client's Picture">
+                <img src="img/client-megan.jpg" alt="Client's Picture">
             </div>
 
-          <h3>Maria</h3>
+          <h3>Megan</h3>
           <div class="rating">
             <span>★</span>
             <span>★</span>
@@ -169,17 +200,17 @@
             <span>★</span>
           </div>
           <span>Monthly Scheduled</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. At nos hinc posthac, sitientis piros Afros. Quid securi etiam tamquam eu fugiat nulla pariatur. Sed haec quis possit intrepidus aestimare tellus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. At nos hinc posthac, sitientis piros Afros. Quid securi etiam tamquam eu fugiat nulla pariatur. Sre tellus.</p>
         </div>
       </div>
 
       <div class="col-sm-4">
           <div class="client-rw-ft">
           <div class="client-image">
-            <img src="img/client-rw-pic.jpg" alt="Client's Picture">
+            <img src="img/client-scarlet.jpg" alt="Client's Picture">
           </div>
 
-          <h3>Maria</h3>
+          <h3>Scarlet</h3>
           <div class="rating">
             <span>★</span>
             <span>★</span>
@@ -187,7 +218,7 @@
             <span>★</span>
             <span>★</span>
           </div>
-          <span>Monthly Scheduled</span>
+          <span>Custom Schedule</span>
           <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. At nos hinc posthac, sitientis piros Afros. Quid securi etiam tamquam eu fugiat nulla pariatur. Sed haec quis possit intrepidus aestimare tellus.</p>
         </div>
       </div>

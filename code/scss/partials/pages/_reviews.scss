@@ -1,0 +1,57 @@
+/* 
+	Styling Reviews.html
+ */
+
+.page-reviews{
+
+	background: $terciary-color;
+
+	.glyphicon-comment{
+		color: $quaternary-color;
+	}
+
+	@media screen and (max-width: map-get($device, medium) ){
+		.title-ft{
+			width: 100%;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.glyphicon-comment{
+			display: inline-block;
+			font-size: 3.75em;
+			margin-left: 43%;
+			color: $quaternary-color;
+		}
+	}
+
+	aside{
+		color: $text-color;
+		background: darken($terciary-color, 10%);
+		border-radius: 20px;
+		padding: 2%;
+		font-size: 0.8125em;  /* 13px; */
+		font-style: italic;
+
+		@media screen and (max-width: map-get($device, medium)) {
+			margin-bottom: 80px;
+			padding: 5%;
+		}
+	}
+
+	.client-rw-ft{
+		@media screen and (max-width: map-get($device, medium)) {
+			margin-bottom: 60px;
+
+			&:last-child{
+				margin-bottom: 10px;
+			}
+			
+		}
+	}
+
+	.fone-banner{
+
+	}
+
+ }
