@@ -1,46 +1,95 @@
-
 body{
+	font: {
+		family: $main-font;
+		size: $default-font-size;
+	}
+	
 	background: $terciary-color;
 }
 
-@media screen and (max-width: map-get($device, medium) ){
-
-	/* Button & Components ======================= */
-	.more-button{
-		padding: 3% 7% !important;
-	}
-
-	/* End ======================= */
-
+h1, h2, h3{
+  font-family: $title-font;
 }
 
+.container{
+  max-width: 1000px;
+  padding: 0;
+}
 
+.row{
+  padding: 1%;
+  margin: 0;
+}
 
+.title-ft{
+	font:{
+		family: $title-font;
+		size: 2.5em; /* 40px; */
+	}
 
+  float: left;
+  margin: 1% 0 1.5% 1%;
+}
 
+/* Glyphicons ======================= */
 
+.glyphicon{
+  display: inline-block;
+  font-size: 1.25em; /* 20px; */
 
-
+  &-heart, &-comment{
+    margin: 1% 0;
+    float: left;
+  	font-size: 2.1875em; /* 35px; */
+  }
+  &-ok , &-calendar{
+  	font-size: 1.1em; /* 17.6px; */
+  	padding: 2%;
+  	/* transition: all 0.3s ease-in; */
+  	
+  	
+  	/* &:hover{
+  		background: lightgreen;
+  		color: #fff;
+  		border-radius: 50px;
+  		padding: 2%;
+  	} */
+  }
+   &-list{
+   	font-size: 1.5em;
+  }
+}
+/* End ======================= */
 
 /* Navegation ======================= */
 .link{
-	color: $text-color !important;
+	color: $text-color;
+	margin: 0 2px;
 	
 	&:hover{
-		color: $active-link-color !important;
+		color: $active-link-color;
+		background: none;
 	}
 }
 .link-active{
 	color: $active-link-color;
 	font-weight: bold;
+	margin: 0 2px;
 }
 
 .nav-pills li a:hover, .nav-pills li a:focus{
 	@extend .link:hover;
 }
 
-.main-nav{
-	background: $terciary-color;
+nav{
+	font-size: em(13px);
+	background: #f6f2d5;
+	text-align: center;
+
+	.nav{
+		display: inline-block;
+		margin: 10px 0;
+	}
 }
 
 /* End ======================= */
@@ -51,6 +100,9 @@ body{
 	background: $primary-color;
 
 	.brand{
+		font-size: 3.125em; /* 50px; */
+		margin: 0;
+		padding: 0;
 		a{
 			color: #fff;
 			text-decoration: none;
@@ -60,12 +112,18 @@ body{
 			}
 		}
 	}
+	.logo{
+		float: left;
+		margin: 0;
+		padding: 20px 0;
+	}
 
 	.slogan{
 		color: #fff;
 		font-weight: bold;
 		font-transform: uppercase;
 	}
+
 }
 
 /* End ======================= */
@@ -74,31 +132,33 @@ body{
 
 .navbar-toggle{
 	span:nth-child(2){
-		padding: 30px 10px ;
+		padding: em(30px) em(10px) ;
 		color: #fff;
 	}
 }
 
+%more-button{
+	@include more-button;
+}
+
 .button{
 	text-align: center;
+	
+	.more-button{
+		@extend %more-button;
+	}
 }
-.more-button{
-	background: $primary-color;
-	border-bottom: solid lighten($secondary-color, 10%) 4px;
-	border-radius: 5px;
-	color: #fff;
-	display: inline-block;
-	text-transform: lowercase;
-	padding: 1% 5%;
 
-	&:hover, &:active{
-		color: $secondary-color;
-		border-bottom: solid $secondary-color 4px;
-		text-decoration: none !important;
-	};
+.fone-banner{
+  padding: 3.2% 0;
 }
 
 .fone-button, .fone-button:visited{
+	float: right;
+	margin:  0;
+	padding: 3.5% 5%;
+	display: inline-block;
+
 	color: #fff;
 	background: $secondary-color;
 	border: 1px solid #fff;
@@ -121,62 +181,142 @@ body{
 .services-ft{
 	color: $text-color;
 	background: #fff;
+	padding: 3% 0;
 }
 
+.services-list{
+  list-style: none;
 
+  li{
+  	margin-bottom: 12%;
+  }
 
-
-
-
-
-
-
-
-
+  h3{
+  	display: inline-block;
+  	margin: 1% 0;
+  }
+  p{
+  	font-size: em(13px);
+  	margin: 1% 2% 5% 2%;
+  }
+}
 
 /* End ======================= */
 
 
 /* Reviews Section ======================= */
 .reviews-ft{
-	color: $text-color;
-	background: $terciary-color;
+	color: $quaternary-color;
+	background: url("../img/symphony.jpg") repeat $terciary-color;
+	text-align: center;
+	padding: 3% 0% 10%;
 
 	h2, h3{	
 		color: $quaternary-color;
-	}
-
-	.reviews-ft-p{
-		color: $quaternary-color;
-		text-align: center;
 	}
 }
 
 .client-rw-ft{
 	border-bottom: solid rgba(137,148,151,0.2) 4px;
+	text-align: center;
+	padding: 5%;
+	background: #fff;
+	border-radius: 10px;
+	font-size: 0.8125em; /* 13px; */
+	margin-top: 35px;
+
+	h3{
+		font:{
+			family: $main-font;
+			size: em(20px);
+			weight: bold;
+		}
+		margin: 5% 0 0 0;
+	}
+	span{
+	 font-weight: bold;
+	 display: inline-block;
+	 margin: 0 0 3% 0;
+	}
+
+	p{
+	 padding: 2%;
+	 
+	 &:before, &:after{
+	   content: ' " ';
+	   font-size: em(16px);
+	   display: inline;
+	 }
+	}
+
+	.client-image{
+		display: inline-block;
+		margin: -50px 0 0 0;
+		width: em(110px);
+		height: em(110px);
+		overflow: hidden;
+		border-radius: 100%;
+	}
 }
 
 .rating{
 	color: $primary-color;
+	cursor: default;
+  
+	span{
+		font-size: em(18px);
+		margin: 0;
+
+		&:nth-child(3n+0){
+			font-size: em(21.2px);
+		}
+		&:nth-child(4n+1){
+			font-size: em(15px);
+		}
+	}
+
+	+ span{
+		color: $text-color;
+		
+		+ p{
+			color: $text-color;
+		}
+	}
+
 }
-
-
-
 
 
 /* End ======================= */
 
 /* Footer Section ======================= */
 
-.footer{
+footer{
 	color: lighten($secondary-color, 20%);
 	background: $secondary-color;
-}
+	padding: 2% 0;
+	margin: 0;
+	text-align: center;
 
+	p{
+		font-size: em(12px);
+		margin: 0;
+	}
+}
 
 
 /* End ======================= */
+
+/* Carousel ======================= */
 .carousel{
+	height: 405px;
+	padding: 0;
+	color: #fff;
+	overflow: hidden;
 	background: $terciary-color;
-	border-bottom: solid 75px $secondary-color;
+	border-bottom: solid 50px $secondary-color;
+
+	img{
+		width:100%;
+	}
 }
+/*======================================= */
