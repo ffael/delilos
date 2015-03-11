@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pritotal - Home and Office Cleaning Services</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body class="page-estimate">
+
+  <nav class="main-nav" role="navegation">
+    <div class="collapse navbar-collapse" id="menu-collapse">
+      <ul class="nav nav-pills">
+        <li> <a href="../index.html" class="link">Home</a> </li>
+        <li> <a href="services.html" class="link">Services</a> </li>
+        <li> <a href="reviews.html" class="link">Reviews</a> </li>
+        <li> <a href="#" class="link-active">Cleaning Estimate</a> </li>
+        <li> <a href="#" class="link">Contact</a> </li>
+      </ul>
+    </div>
+
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-th-list"></span>
+    </button>
+  </nav>
+
+  <header class="header">
+    <div class="container">
+      <div class="col-sm-8">
+        <div class="logo">
+            <h1 class="brand"><a href="../index.html">Pri Total</a></h1> <span class="slogan">Cleaning Service</span>
+        </div>
+      </div>
+
+      <div class="col-sm-4 fone-banner">
+        <a href="tel:9785965350" class="hidden-sm hidden-xs fone-button">
+          <span class="glyphicon glyphicon-earphone fone-icon">  </span>
+          <span>Give us a Call </span>
+          <span>(978) 596-5350<span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Carousel Featured -->
+  <div id="myCarousel" class="carousel slide hidden-xs hidden-sm">
+    <!-- Carousel Indicators -->
+      <!-- <ol class="carousel-indicators">
+        <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol> -->
+   
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="../img/carousel-1.jpg" alt="Illustratie image of our services">
+            </div>
+
+            <div class="item">
+                <img src="../img/carousel-2.jpg" alt="Illustratie image of our services">
+            </div>
+
+            <div class="item">
+                <img src="../img/carousel-3.jpg" alt="Illustratie image of our services">
+            </div>
+        </div>
+
+  <!-- Controlers -->
+
+    <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a>
+
+    <a href="#myCarousel" class="right carousel-control" data-slide="next">
+      <span class="icon-next"></span>
+    </a>
+
+
+  </div> 
+<!-- End of Carousel -->
+
+  <div class="services-ft">
+
+    <div class="container">
+
+      <div class="row">
+        <span class="glyphicon glyphicon-list-alt"></span>
+        <h2 class="title-ft"> Cleaning Estimate </h2>
+      </div>
+
+      <div class="row">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div class="row">
+
+      <!-- Personal Information -->
+          <form action="#" method="post">
+            <fieldset class="col-md-6">
+              <legend>Personal Information</legend>
+
+              <label for="cli-first-name">First name:</label>
+              <input type="text" name="cli-first-name" required="required"><br>
+
+              <label for="cli-last-name">Last name:</label>
+              <input type="text" name="cli-last-name" required="required"><br>
+
+              <label for="cli-address">Address:</label>
+              <input type="text" name="cli-address" required="required"><br>
+
+              <label for="cli-city">City:</label>
+              <input type="text" name="cli-city" required="required"><br>
+
+              <label for="cli-state">State/Province:</label>
+              <select name="cli-state" id="states" required="required">
+                <optgroup label="States">
+                  <option value="ma">Massachusets</option>
+                  <option value="ny">New York</option>
+                  <option value="ca">California</option>
+                </optgroup>
+              </select><br>
+
+              <label for="cli-zip">Zip Code:</label>
+              <input type="text" name="cli-zip"><br>
+
+              <label for="cli-address">Tel:</label>
+              <input type="tel" name="cli-tel"><br>
+
+              <label for="cli-email">Email:</label>
+              <input type="email" name="cli-email"><br>
+            </fieldset>
+            
+
+            <!-- Cleaning Information -->
+            <fieldset class="col-md-6">
+              <legend>Cleaning Information</legend>
+
+              <label for="">Number of Bedrooms:</label><br>
+              <label for="">Number of Full Bathrooms:</label><br>
+              <label for="">Number of Half Bathrooms:</label><br>
+
+              <label for="">Other Rooms:</label><br>
+              <!-- Family Room, Foyer, Kitchen, Dinning Room, Laundry, Office, Living Room, Mudroom, Other(maybe) -->
+
+              <label for="">Approximate Sq. Ft.:</label><br>
+
+              <label for="">Pets?:</label><br> <!-- Checkbox and after, how many -->
+
+              <label for="">How many people live in the home?</label><br>
+
+              <label for="">Frequency of Service:</label><br>
+
+              <label for="">Any Special Requests?:</label><br>
+
+              <label for="">How did you hear about us?:</label><br>
+
+            </fieldset>
+          </form>
+      </div>
+  </div>
+  </div>
+
+
+  <footer class="footer">
+    <p class="container">
+      Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+    </p>
+  </footer>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
+</html>

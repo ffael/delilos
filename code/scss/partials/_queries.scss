@@ -1,0 +1,78 @@
+@media screen and (max-width: map-get($device, medium) ){
+
+	/* Button & Components ======================= */
+	.more-button{
+		padding: 3% 7% !important;
+	}
+
+	/* End ======================= */
+
+	/* Navegation Section ======================= */
+	nav{
+		padding: 0;
+		position: relative;
+	}
+	.navbar-collapse{
+		.nav{
+			width: 100%;
+			li{
+				clear: both;
+			}
+		}
+		
+	}
+
+	/* End ======================= */
+
+	/* Services Section ======================= */
+	.services-ft{
+		padding: 10% 0;
+
+		.title-ft{
+			width: 100%;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.glyphicon{
+			&-heart , &-list-alt{
+				display: inline-block;
+				font-size: 3.75em;
+				margin-left: 43%;
+			}
+		}
+	}
+
+	.services-list{
+		padding: 0;
+	}
+
+	
+
+
+	/* End ======================= */
+
+	/* Reviews Section ======================= */
+	
+	.reviews-ft{
+		padding: 10% 0;
+
+		.title-ft{
+			width: 100%;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.glyphicon{
+			&-comment{
+				display: inline-block;
+				font-size: 3.75em;
+				margin-left: 43%;
+			}
+		}
+	}
+
+
+
+	/* End ======================= */
+}

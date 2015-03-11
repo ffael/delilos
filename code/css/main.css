@@ -1,0 +1,410 @@
+/* 
+	Layout Settings -------------
+*/
+/* ----------------------------- */
+/* 
+	Theme Settings -------------
+*/
+/* ----------------------------- */
+/* 
+	Typography -------------
+*/
+/* FONTS ======================= */
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*======================================= */
+body {
+  font-family: "Montserrat", Tahoma, sans-serif;
+  font-size: 16px;
+  background: #F2F1E7; }
+
+h1, h2, h3 {
+  font-family: "Lobster", Tahoma, sans-serif; }
+
+.container {
+  max-width: 1000px;
+  padding: 0; }
+
+.row {
+  padding: 1%;
+  margin: 0; }
+
+.title-ft {
+  font-family: "Lobster", Tahoma, sans-serif;
+  font-size: 2.5em;
+  /* 40px; */
+  float: left;
+  margin: 1% 0 1.5% 1%; }
+
+/* Glyphicons ======================= */
+.glyphicon {
+  display: inline-block;
+  font-size: 1.25em;
+  /* 20px; */ }
+  .glyphicon-heart, .glyphicon-comment {
+    margin: 1% 0;
+    float: left;
+    font-size: 2.1875em;
+    /* 35px; */ }
+  .glyphicon-ok, .glyphicon-calendar {
+    font-size: 1.1em;
+    /* 17.6px; */
+    padding: 2%;
+    /* transition: all 0.3s ease-in; */
+    /* &:hover{
+    	background: lightgreen;
+    	color: #fff;
+    	border-radius: 50px;
+    	padding: 2%;
+    } */ }
+  .glyphicon-list {
+    font-size: 1.5em; }
+
+/* End ======================= */
+/* Navegation ======================= */
+.link {
+  color: #87847C;
+  margin: 0 2px; }
+  .link:hover, .nav-pills li a:hover, .nav-pills li a:focus {
+    color: #269686;
+    background: none; }
+
+.link-active {
+  color: #269686;
+  font-weight: bold;
+  margin: 0 2px; }
+
+nav {
+  font-size: 0.8125em;
+  background: #f6f2d5;
+  text-align: center; }
+  nav .nav {
+    display: inline-block;
+    margin: 10px 0; }
+
+/* End ======================= */
+/* Header & Logo ======================= */
+.header {
+  background: #50D2C0; }
+  .header .brand {
+    font-size: 3.125em;
+    /* 50px; */
+    margin: 0;
+    padding: 0; }
+    .header .brand a {
+      color: #fff;
+      text-decoration: none; }
+      .header .brand a:hover {
+        color: #269686; }
+  .header .logo {
+    float: left;
+    margin: 0;
+    padding: 20px 0; }
+  .header .slogan {
+    color: #fff;
+    font-weight: bold;
+    font-transform: uppercase; }
+
+/* End ======================= */
+/* Button & Components ======================= */
+.navbar-toggle span:nth-child(2) {
+  padding: 1.875em 0.625em;
+  color: #fff; }
+
+.button .more-button {
+  font-family: "Lobster", Tahoma, sans-serif;
+  font-size: 1.125em;
+  border-bottom: solid #4c2673 4px;
+  border-radius: 25px;
+  background: rebeccapurple;
+  color: #fff;
+  display: inline-block;
+  text-transform: lowercase;
+  padding: 1% 5%; }
+  .button .more-button:hover, .button .more-button:active, .button .more-button:focus {
+    color: #261339;
+    border-bottom: solid #402060 4px;
+    text-decoration: none !important; }
+
+.button {
+  text-align: center; }
+
+.fone-banner {
+  padding: 3.2% 0; }
+
+.fone-button, .fone-button:visited {
+  float: right;
+  margin: 0;
+  padding: 3.5% 5%;
+  display: inline-block;
+  color: #fff;
+  background: #269686;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  text-decoration: none !important; }
+  .fone-button:hover, .fone-button:visited:hover {
+    color: #12443d; }
+  .fone-button:active, .fone-button:visited:active {
+    color: #50D2C0; }
+
+/* End ======================= */
+/* Services Section ======================= */
+.services-ft {
+  color: #87847C;
+  background: #fff;
+  padding: 3% 0; }
+
+.services-list {
+  list-style: none; }
+  .services-list li {
+    margin-bottom: 12%; }
+  .services-list h3 {
+    display: inline-block;
+    margin: 1% 0; }
+  .services-list p {
+    font-size: 0.8125em;
+    margin: 1% 2% 5% 2%; }
+
+/* End ======================= */
+/* Reviews Section ======================= */
+.reviews-ft {
+  color: #7d7844;
+  background: url("../img/symphony.jpg") repeat #F2F1E7;
+  text-align: center;
+  padding: 3% 0% 10%; }
+  .reviews-ft h2, .reviews-ft h3 {
+    color: #7d7844; }
+
+.client-rw-ft {
+  border-bottom: solid rgba(137, 148, 151, 0.2) 4px;
+  text-align: center;
+  padding: 5%;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 0.8125em;
+  /* 13px; */
+  margin-top: 35px; }
+  .client-rw-ft h3 {
+    font-family: "Montserrat", Tahoma, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 5% 0 0 0; }
+  .client-rw-ft span {
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0 3% 0; }
+  .client-rw-ft p {
+    padding: 2%; }
+    .client-rw-ft p:before, .client-rw-ft p:after {
+      content: ' " ';
+      font-size: 1em;
+      display: inline; }
+  .client-rw-ft .client-image {
+    display: inline-block;
+    margin: -50px 0 0 0;
+    width: 6.875em;
+    height: 6.875em;
+    overflow: hidden;
+    border-radius: 100%; }
+
+.rating {
+  color: #50D2C0;
+  cursor: default; }
+  .rating span {
+    font-size: 1.125em;
+    margin: 0; }
+    .rating span:nth-child(3n+0) {
+      font-size: 1.325em; }
+    .rating span:nth-child(4n+1) {
+      font-size: 0.9375em; }
+  .rating + span {
+    color: #87847C; }
+    .rating + span + p {
+      color: #87847C; }
+
+/* End ======================= */
+/* Footer Section ======================= */
+footer {
+  color: #50d2c0;
+  background: #269686;
+  padding: 2% 0;
+  margin: 0;
+  text-align: center; }
+  footer p {
+    font-size: 0.75em;
+    margin: 0; }
+
+/* End ======================= */
+/* Carousel ======================= */
+.carousel {
+  height: 405px;
+  padding: 0;
+  color: #fff;
+  overflow: hidden;
+  background: #F2F1E7;
+  border-bottom: solid 50px #269686; }
+  .carousel img {
+    width: 100%; }
+
+/*======================================= */
+@media screen and (max-width: 678px) {
+  /* Button & Components ======================= */
+  .more-button {
+    padding: 3% 7% !important; }
+
+  /* End ======================= */
+  /* Navegation Section ======================= */
+  nav {
+    padding: 0;
+    position: relative; }
+
+  .navbar-collapse .nav {
+    width: 100%; }
+    .navbar-collapse .nav li {
+      clear: both; }
+
+  /* End ======================= */
+  /* Services Section ======================= */
+  .services-ft {
+    padding: 10% 0; }
+    .services-ft .title-ft {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px; }
+    .services-ft .glyphicon-heart, .services-ft .glyphicon-list-alt {
+      display: inline-block;
+      font-size: 3.75em;
+      margin-left: 43%; }
+
+  .services-list {
+    padding: 0; }
+
+  /* End ======================= */
+  /* Reviews Section ======================= */
+  .reviews-ft {
+    padding: 10% 0; }
+    .reviews-ft .title-ft {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px; }
+    .reviews-ft .glyphicon-comment {
+      display: inline-block;
+      font-size: 3.75em;
+      margin-left: 43%; }
+
+  /* End ======================= */ }
+/* Pages */
+/* 
+	Styling Services.html
+ */
+.page-services .services-ft {
+  padding: 1.5% 0 3% 0; }
+.page-services .glyphicon-list-alt {
+  font-size: 2.1875em;
+  /* 35px; */
+  margin: 1.5% 0;
+  float: left; }
+@media screen and (max-width: 678px) {
+  .page-services .title-ft {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px; }
+  .page-services .glyphicon-list-alt {
+    display: inline-block;
+    font-size: 3.75em;
+    margin-left: 43%;
+    color: #87847C; } }
+.page-services aside {
+  color: #87847C;
+  background: #F2F1E7;
+  border-radius: 20px;
+  padding: 3%;
+  font-size: 0.8125em;
+  /* 13px; */
+  font-style: italic; }
+  @media screen and (max-width: 678px) {
+    .page-services aside {
+      margin-bottom: 25px;
+      padding: 5%; } }
+.page-services .services-list {
+  margin-bottom: 5%; }
+
+/* 
+	Styling Reviews.html
+ */
+.page-reviews {
+  background: #F2F1E7; }
+  @media screen and (min-width: 991px) {
+    .page-reviews .col-md-8 {
+      margin-top: -35px; } }
+  .page-reviews .reviews-ft {
+    padding: 1.5% 0 5% 0; }
+  .page-reviews .glyphicon-comment {
+    color: #7d7844; }
+  @media screen and (max-width: 678px) {
+    .page-reviews .title-ft {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px; }
+    .page-reviews .glyphicon-comment {
+      display: inline-block;
+      font-size: 3.75em;
+      margin-left: 43%;
+      color: #7d7844; } }
+  .page-reviews aside {
+    color: #87847C;
+    background: #e0dec6;
+    border-radius: 20px;
+    padding: 2%;
+    font-size: 0.8125em;
+    /* 13px; */
+    font-style: italic; }
+    @media screen and (max-width: 678px) {
+      .page-reviews aside {
+        margin-bottom: 80px;
+        padding: 5%; } }
+  .page-reviews .client-rw-ft {
+    margin-bottom: 60px; }
+    @media screen and (max-width: 678px) {
+      .page-reviews .client-rw-ft {
+        margin-bottom: 60px; }
+        .page-reviews .client-rw-ft:last-child {
+          margin-bottom: 10px; } }
+
+/* 
+	Styling Services.html
+ */
+.page-estimate .services-ft {
+  padding: 1.5% 0 3% 0; }
+.page-estimate .glyphicon-list-alt {
+  font-size: 2.1875em;
+  /* 35px; */
+  margin: 1.5% 0;
+  float: left; }
+@media screen and (max-width: 678px) {
+  .page-estimate .title-ft {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px; }
+  .page-estimate .glyphicon-list-alt {
+    display: inline-block;
+    font-size: 3.75em;
+    margin-left: 43%;
+    color: #87847C; } }
+.page-estimate aside {
+  color: #87847C;
+  background: #F2F1E7;
+  border-radius: 20px;
+  padding: 3%;
+  font-size: 0.8125em;
+  /* 13px; */
+  font-style: italic;
+  float: right; }
+  @media screen and (max-width: 678px) {
+    .page-estimate aside {
+      margin-bottom: 25px;
+      padding: 5%; } }
+.page-estimate .services-list {
+  margin-bottom: 5%; }
+
+/*# sourceMappingURL=main.css.map */

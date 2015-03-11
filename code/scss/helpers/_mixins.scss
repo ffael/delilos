@@ -1,0 +1,39 @@
+//Function
+
+@function em($val, $context: $default-font-size){
+	$em-val: $val / $context + em;
+	@return $em-val;
+}
+
+//Buttons
+
+@mixin more-button(
+	$color: rebeccapurple, 
+	$font: $title-font,
+	$font-size: em(18px),
+	$radius: 25px){
+
+	font:{
+		family: $font;
+		size: $font-size;
+	}
+	
+	border:{
+		bottom: solid darken($color, 10%) 4px;
+		radius: $radius;
+	}
+
+	background: $color;
+
+	color: #fff;
+	display: inline-block;
+	text-transform: lowercase;
+	padding: 1% 5%;
+
+	&:hover, &:active, &:focus{
+		color: darken($color, 25%);
+		border-bottom: solid darken($color, 15%) 4px;
+		text-decoration: none !important;
+	};
+
+}
