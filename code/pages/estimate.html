@@ -20,7 +20,7 @@
         <li> <a href="services.html" class="link">Services</a> </li>
         <li> <a href="reviews.html" class="link">Reviews</a> </li>
         <li> <a href="#" class="link-active">Cleaning Estimate</a> </li>
-        <li> <a href="#" class="link">Contact</a> </li>
+        <li> <a href="contact.html" class="link">Contact</a> </li>
       </ul>
     </div>
 
@@ -111,35 +111,34 @@
             <fieldset class="col-md-6">
               <legend>Personal Information</legend>
 
-              <label for="cli-first-name">First name:</label>
-              <input type="text" name="cli-first-name" required="required"><br>
+              <label for="first-name">First name:</label>
+              <input type="text" id="first-name" name="user-name" required ><br>
 
-              <label for="cli-last-name">Last name:</label>
-              <input type="text" name="cli-last-name" required="required"><br>
+              <label for="last-name">Last name:</label>
+              <input type="text" id="last-name" name="user-last-name" required ><br>
 
-              <label for="cli-address">Address:</label>
-              <input type="text" name="cli-address" required="required"><br>
+              <label for="address">Address:</label>
+              <input type="text" id="address" name="user-address" required ><br>
 
-              <label for="cli-city">City:</label>
-              <input type="text" name="cli-city" required="required"><br>
+              <label for="city">City:</label>
+              <input type="text" id="city" name="user-city" required ><br>
 
-              <label for="cli-state">State/Province:</label>
-              <select name="cli-state" id="states" required="required">
-                <optgroup label="States">
-                  <option value="ma">Massachusets</option>
-                  <option value="ny">New York</option>
-                  <option value="ca">California</option>
-                </optgroup>
+              <label for="state">State/Province:</label>
+              <select id="state" name="user-state" required>
+                <option value="" selected disabled>Select a State/Province</option>
+                <option value="ma">Massachusets</option>
+                <option value="ny">New York</option>
+                <option value="ca">California</option>
               </select><br>
 
-              <label for="cli-zip">Zip Code:</label>
-              <input type="text" name="cli-zip"><br>
+              <label for="zipcode">Zip Code:</label>
+              <input type="text" id="zipcode" name="user-zip" pattern="^\d{5}(?:[-\s]\d{4})?$" title="12345 or 12345-6789 or 12345 1234" required><br>
 
-              <label for="cli-address">Tel:</label>
-              <input type="tel" name="cli-tel"><br>
+              <label for="tel">Tel:</label>
+              <input type="tel" id="tel" name="user-tel" pattern="^\d{9,10}$" title="A 9 or 10 digits lenght phone number. Do not use hyphen." required ><br>
 
-              <label for="cli-email">Email:</label>
-              <input type="email" name="cli-email"><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="user-email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" title="example@host.com"><br>
             </fieldset>
             
 
@@ -147,26 +146,150 @@
             <fieldset class="col-md-6">
               <legend>Cleaning Information</legend>
 
-              <label for="">Number of Bedrooms:</label><br>
-              <label for="">Number of Full Bathrooms:</label><br>
-              <label for="">Number of Half Bathrooms:</label><br>
+              <label for="n-bed">Bedrooms:</label>
+              <select id="n-bed" name="user-bed" required >
+                <option value="0">0</option>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select><br>
 
-              <label for="">Other Rooms:</label><br>
-              <!-- Family Room, Foyer, Kitchen, Dinning Room, Laundry, Office, Living Room, Mudroom, Other(maybe) -->
+              <label for="n-bath">Full Bathrooms:</label>
+              <select id="n-bath" name="user-bath" required >
+                <option value="0">0</option>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select><br>
 
-              <label for="">Approximate Sq. Ft.:</label><br>
+              <label for="n-half-bath">Half Bathrooms:</label>
+              <select id="n-half-bath" name="user-halfbath" required >
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select><br>
 
-              <label for="">Pets?:</label><br> <!-- Checkbox and after, how many -->
+              <label>Other Rooms:</label><br>
+                <ul class="checklist-rooms">
+                  <li>
+                    <input type="checkbox" id="familyroom" name="user-other-rooms" value="family-room"> <label for="familyroom">Family Room</label>
+                  </li>
+                
+                  <li>
+                    <input type="checkbox" id="foyer" name="user-other-rooms" value="foyer-room"> <label for="foyer">Foyer</label>
+                  </li>
+                
+                  <li>
+                    <input type="checkbox" id="kitchen" name="user-other-rooms" value="kitchen-room"> <label for="kitchen">Kitchen</label>
+                  </li>
+                
+                  <li>
+                    <input type="checkbox" id="dinningroom" name="user-other-rooms" value="dinning-room"> <label for="dinningroom">Dinning Room</label>
+                  </li>
+                
+                  <li>
+                    <input type="checkbox" id="laundry" name="user-other-rooms" value="laundry-room"> <label for="laundry">Laundry</label>
+                  </li>
+                
+                  <li>
+                    <input type="checkbox" id="office" name="user-other-rooms" value="office-room"> <label for="office">Office</label>
+                  </li>
+                
+                  <li>
+                    <input type="checkbox" id="livingroom" name="user-other-rooms" value="living-room"> <label for="livingroom">Living Room</label>
+                  </li>
+                
+                  <li>
+                    <input type="checkbox" id="mudroom" name="user-other-rooms" value="mud-room"> <label for="mudroom">Mudroom</label>
+                  </li>
+                
+                  <li>
+                    <input type="checkbox" id="other" name="user-other-rooms" value="other-room"> <label for="other">Other</label>
+                  </li>
 
-              <label for="">How many people live in the home?</label><br>
+                </ul>
 
-              <label for="">Frequency of Service:</label><br>
+              <label for="sqft">Approximate Sq. Ft.:</label>
+              <input type="text" id="sqft" name="user-sqft" maxlength="5"><br>
 
-              <label for="">Any Special Requests?:</label><br>
+              <label for="pets">Pets:</label>
+              <select id="pets" name="user-pets" required >
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select><br> <!-- Checkbox and after, how many -->
 
-              <label for="">How did you hear about us?:</label><br>
+              <label for="people">How many people live in the home?</label>
+              <select id="people" name="user-people" required >
+                <option value="0">0</option>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select><br>
+
+              <label for="frequency">Frequency of Service:</label>
+              <select id="frequency" name="user-frequency-service" required >
+                <option value="" selected disabled >Choose a frequency</option>
+                <option value="bi-weekly">Bi-Weekly</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="once">Just Once</option>
+              </select><br>
+
+              <label for="request">Any Special Requests?:</label>
+              <textarea name="special-request" id="request" cols="30" rows="5"></textarea><br>
+
+              <label for="hearabout">How did you hear about us?:</label>
+              <select id="hearabout" name="hear-about" required="required">
+                <option value="" selected disabled >We are curious =)</option>
+                <option value="friend">A good Friend</option>
+                <option value="internet">Internet (Google,...)</option>
+                <option value="phone">By Phone</option>
+                <option value="other">Other</option>
+              </select><br>
 
             </fieldset>
+
+            <div class="row button">
+              <input type="submit" value="GO" class="">
+            </div>
           </form>
       </div>
   </div>
@@ -179,7 +302,7 @@
     </p>
   </footer>
 
-<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 
 </body>
